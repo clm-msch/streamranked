@@ -4,9 +4,9 @@ export default function Game() {
             <h2>Ton jeu</h2>
             <div className="flex flex-row gap-8">
                 <img src="/img/card-fortnite.png"></img>
-                <img src="./img/cards/card-fr.png"></img>
-                <img src="./img/cards/card-fr.png"></img>
-                <img src="./img/cards/card-fr.png"></img>
+                <img src="./img/cards/card-apex.png"></img>
+                <img src="./img/cards/card-mw3.png"></img>
+                <img src="./img/cards/card-valo.png"></img>
             </div>
         </div>
     );
