@@ -1,12 +1,15 @@
-// import {useState} from 'react';
+import {useState} from 'react';
 
-export default function Home() {
 
-//   const [isShown, setIsShown] = useState(false);
 
-//     const handleClick = () => {
-//         setIsShown(true);
-//     }
+export default function Home(props) {
+
+  const [isShown, setIsShown] = useState(false);
+
+const handleClick = () => {
+   setIsShown(true);
+   props.onGoNextStep();
+}
 
     return (
         <div className="bg-secondary text-white h-screen flex flex-col items-center justify-center gap-8">

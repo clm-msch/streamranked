@@ -13,11 +13,19 @@ export default function Setup() {
     //     setIsShown(true);
     // }
 
+    const handleNext = (e) => {
+        console.log(e);
+        if (step == "welcome"){
+            setstep("country") 
+        }
+    }
+
+
     return (
         <div>
-        {step == "welcome" ? <Welcome /> : null}
+        {step == "welcome" ? <Welcome onGoNextStep={handleNext} /> : null}
         {step == "country" ? <Country /> : null}
-        {step == "country" ? <Game /> : null}
+        {step == "game" ? <Game /> : null}
         </div>
     );
 }
