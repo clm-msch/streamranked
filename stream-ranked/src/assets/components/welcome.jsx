@@ -1,4 +1,13 @@
+// import {useState} from 'react';
+
 export default function Home() {
+
+//   const [isShown, setIsShown] = useState(false);
+
+//     const handleClick = () => {
+//         setIsShown(true);
+//     }
+
     return (
         <div className="bg-secondary text-white h-screen flex flex-col items-center justify-center gap-8">
             <img src="img/courrone.svg"></img>
@@ -8,7 +17,7 @@ export default function Home() {
                     StreamRanked, votre plateforme ultime des streamers Twitch.
                 </p>
             </div>
-            <button className=" text-3xl bg-gradient-to-r from-blue to-violet  text-white font-bold py-2 px-10 rounded hover:bg-purple-700">
+            <button onClick={handleClick} className=" text-3xl bg-gradient-to-r from-blue to-violet  text-white font-bold py-2 px-10 rounded hover:bg-purple-700">
                 Je vote
             </button>
         </div>
